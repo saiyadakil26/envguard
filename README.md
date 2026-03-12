@@ -1,15 +1,15 @@
-# EnvGuard
+# secure-env-guardian
 
 Simple and reliable environment variable validation for Node.js.
 
-EnvGuard helps ensure required environment variables exist and are correctly typed before your application starts.
+secure-env-guardian helps ensure required environment variables exist and are correctly typed before your application starts.
 
 ---
 
 ## Installation
 
 ```bash
-npm install envguard
+npm i secure-env-guardian
 ```
 
 ---
@@ -17,15 +17,15 @@ npm install envguard
 ## Quick Example
 
 ```js
-import { EnvGuard } from "envguard"
+import { EnvGuard } from "secure-env-guardian";
 
 const env = EnvGuard.validate({
   PORT: { type: "number", required: true },
   DATABASE_URL: { type: "string", required: true },
-  DEBUG: { type: "boolean", default: false }
-})
+  DEBUG: { type: "boolean", default: false },
+});
 
-console.log(env.PORT)
+console.log(env.PORT);
 ```
 
 ---
@@ -42,7 +42,7 @@ DEBUG=true
 
 ## Supported Types
 
-EnvGuard supports the following types:
+secure-env-guardian supports the following types:
 
 - string
 - number
@@ -53,8 +53,8 @@ Example:
 ```js
 EnvGuard.validate({
   PORT: { type: "number" },
-  DEBUG: { type: "boolean" }
-})
+  DEBUG: { type: "boolean" },
+});
 ```
 
 ---
@@ -63,8 +63,8 @@ EnvGuard.validate({
 
 ```js
 EnvGuard.validate({
-  NODE_ENV: { type: "string", default: "development" }
-})
+  NODE_ENV: { type: "string", default: "development" },
+});
 ```
 
 ---
@@ -81,10 +81,10 @@ Missing environment variable: DATABASE_URL
 
 ---
 
-## Why EnvGuard?
+## Why secure-env-guardian?
 
 Many Node.js applications fail at runtime due to missing environment variables.  
-EnvGuard ensures configuration errors are caught early during application startup.
+secure-env-guardian ensures configuration errors are caught early during application startup.
 
 ---
 
