@@ -1,0 +1,42 @@
+{
+  "name": "secure-env-guardian",
+  "version": "1.0.0",
+  "description": "Simple environment variable validation for Node.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "environment",
+    "validation",
+    "nodejs"
+  ],
+  "author": "Akil Saiyad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saiyadakil26/envguard"
+  },
+  "bugs": {
+    "url": "https://github.com/saiyadakil26/envguard/issues"
+  },
+  "homepage": "https://github.com/saiyadakil26/envguard#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
