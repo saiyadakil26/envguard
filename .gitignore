@@ -1,7 +1,6 @@
-nodejs
-dotenv
-environment
-env
-validation
-typescript
-developer-tools
+node_modules
+dist
+.env
+npm-debug.log
+.DS_Store
+coverage

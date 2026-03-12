@@ -1,5 +1,5 @@
 {
-  "name": "envguard",
+  "name": "secure-env-guardian",
   "version": "1.0.0",
   "description": "Simple environment variable validation for Node.js",
   "type": "module",
